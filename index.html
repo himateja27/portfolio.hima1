@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guna's Portfolio</title>
+    <title>Hima Teja's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -17,30 +17,29 @@
       </nav>
     </header>
 
-      <section id="about">
-        <h2>About Me</h2>
-         <img src="/hima2.img.jpg" alt="himateja's photo" class="profile-pic" />
-        <p>
-          Hi, I'm <strong>Vankayalapati Hima Teja </strong>, a passionate
-          Electronics and Communication Engineering student based in Tirupati,
-          India. I specialize in full-stack web development and , blending
-          software to build practical, real-world solutions.
-        </p>
-        <p>
-          With a strong foundation in HTML, CSS, JavaScript, Python, Golang, and MySQL, I
-          enjoy creating seamless user experiences and robust backend systems.
-          My recent projects include a full-stack banking system and a personal
-          portfolio site, both of which showcase my ability to integrate APIs,
-          troubleshoot deployment issues, and deliver polished results.
-        </p>
-        <p>
-          Beyond coding, I'm driven by curiosity and a growth mindset. I love
-          exploring new technologies, refining my resume for tech roles, and
-          building projects that reflect both creativity and technical depth. If
-          you're looking for someone who's proactive, resourceful, and always
-          eager to learn—I'm your Hima Teja.
-        </p>
-      </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="/hima2.img.jpg" alt="himateja's photo" class="profile-pic" />
+      <p>
+        Hi, I'm <strong>Vankayalapati Hima Teja </strong>, a passionate
+        Electronics and Communication Engineering student based in Tirupati,
+        India. I specialize in full-stack web development and , blending
+        software to build practical, real-world solutions.
+      </p>
+      <p>
+        With a strong foundation in HTML, CSS, JavaScript, Python, Golang, and
+        MySQL, I enjoy creating seamless user experiences and robust backend
+        systems. My recent projects include a full-stack banking system and a
+        personal portfolio site, both of which showcase my ability to integrate
+        APIs, troubleshoot deployment issues, and deliver polished results.
+      </p>
+      <p>
+        Beyond coding, I'm driven by curiosity and a growth mindset. I love
+        exploring new technologies, refining my resume for tech roles, and
+        building projects that reflect both creativity and technical depth. If
+        you're looking for someone who's proactive, resourceful, and always
+        eager to learn—I'm your Hima Teja.
+      </p>
     </section>
 
     <section id="projects">
@@ -49,22 +48,33 @@
         <h3>Banking System</h3>
         <p>Full-stack banking app with Flask backend and API integration.</p>
         <p>
-          * Successfully built and tested a scalable banking system with
-          real-time data flow between frontend and backend. Demonstrated strong
-          debugging skills and full-stack integration.
+          Successfully built and tested a scalable banking system with real-time
+          data flow between frontend and backend. Demonstrated strong debugging
+          skills and full-stack integration.
+        </p>
+        <p>
+          The backend is modular and API-driven, tested with Postman and
+          integrated using JavaScript fetch(). Refactored from procedural to
+          class-based Python for maintainability, and structured for deployment
+          on platforms like Render.
         </p>
         <a href="https://github.com/himateja27/firstcode1" target="_blank">
-        🔗 View on GitHub</a
+          🔗 View on GitHub</a
         >
       </div>
-       <div class="project">
-    <h3>Portfolio Website</h3>
-    <p>Responsive personal portfolio built with HTML, CSS, and JavaScript.</p>
-    <a href="https://github.com/himateja27/portfolio.hima1" target="_blank">
-      🔗 View on GitHub
-    </a>
-  </div>
-
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>
+          A responsive personal website built with HTML, CSS, and JavaScript to
+          showcase your skills, projects, and resume. It features a clean
+          design, GitHub project links, resume download, and a contact form
+          integrated with Formspree for easy communication. Designed to reflect
+          your technical depth, creativity, and readiness for tech roles
+        </p>
+        <a href="https://github.com/himateja27/portfolio.hima1" target="_blank">
+          🔗 View on GitHub
+        </a>
+      </div>
     </section>
 
     <section id="resume">
@@ -74,10 +84,16 @@
 
     <section id="contact">
       <h2>Contact Me</h2>
-      <form id="contactForm">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
+      <form action="https://formspree.io/f/mnngyzkg" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_redirect"
+          value="https://HimaTeja-portfolio.netlify.app/thank-you.html"
+        />
         <button type="submit">Send</button>
       </form>
     </section>
